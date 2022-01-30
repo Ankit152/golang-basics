@@ -31,5 +31,4 @@ func main() {
 
 	i, j, text := 1, 10, "hola"
 	fmt.Println("The value is", i, ",", j, "and", text)
-
 }
