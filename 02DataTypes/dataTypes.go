@@ -29,4 +29,7 @@ func main() {
 	num2 := 152
 	fmt.Printf("This is an %T type with the value %v and the size %v\n", num2, num2, unsafe.Sizeof(num2))
 
+	i, j, text := 1, 10, "hola"
+	fmt.Println("The value is", i, ",", j, "and", text)
+
 }
