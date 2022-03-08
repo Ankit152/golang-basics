@@ -5,6 +5,7 @@ import (
 	"unsafe"
 )
 
+// main
 func main() {
 	// default data type declaration
 	fmt.Println("This code is all about data types in Golang.")

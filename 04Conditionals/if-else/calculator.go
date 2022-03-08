@@ -2,7 +2,9 @@ package main
 
 import "fmt"
 
+// main
 func main() {
+	// program to make a calculator
 	var a, b, ch int
 	fmt.Println("####### Welcome to Golang Calculator #######")
 	fmt.Println("List of operations that can be performed:")
@@ -13,6 +15,8 @@ func main() {
 	fmt.Scanf("%d", &b)
 	fmt.Print("Enter the choice: ")
 	fmt.Scanf("%d", &ch)
+
+	// calculations based on choice
 	if ch == 1 {
 		fmt.Println("Addition is:", a+b)
 	} else if ch == 2 {
