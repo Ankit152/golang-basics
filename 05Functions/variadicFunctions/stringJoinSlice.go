@@ -6,8 +6,9 @@ import (
 )
 
 // vardiac function that returns the joined string
-func joinString(elements ...string) string {
-	return strings.Join(elements, "-")
+func joinString(str1 string, elements ...string) string {
+	str1 = strings.Replace(str1, " ", "-", -1)
+	return str1 + "-" + strings.Join(elements, "-")
 }
 
 // main
@@ -16,6 +17,6 @@ func main() {
 	elements := []string{
 		"hello", "hola", "namaste",
 		"blah", "blah", "blah"}
-
-	fmt.Println(joinString(elements...)) // slice '...'
+	str1 := "Hi there"
+	fmt.Println(joinString(str1, elements...)) // slice '...'
 }
